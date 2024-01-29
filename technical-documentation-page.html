@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Documentation Page</title>
+  <link rel="stylesheet" href="tdp.css" />
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <ul>
+        <header>HTML Documentation</header> 
+        <li>
+          <a href="#HTML_is_a_descriptive_language" class="nav-link">HTML is a descriptive language</a>
+        </li>
+        <li>
+          <a href="#The_Bases_of_HTML" class="nav-link">The Bases of HTML</a>
+        </li>
+        <li>
+          <a href="#First_Steps_with_HTML" class="nav-link">First Steps with HTML</a> 
+        </li>
+        <li>
+          <a href="#The_Tag_a" class="nav-link">The Tag a</a>
+        </li>
+        <li>
+          <a href="#Headings" class="nav-link">Headings</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="main-section" id="HTML_is_a_descriptive_language">
+      <header>HTML is a descriptive language</header>
+      <p>The reader has probably used a word processor (AbiwordTM, Microsoft Word or KWordTM) or a page description program (QuarkXPressTM). With this type of applications the user has total control over the elements of the document: you can tell the program "put this text with this size", "place it to 1 cm. of the border", "use this indent for paragraphs", etc... With HTML the programmer does not have this kind of control over the elements that will be included in his page. The goal of this language will be to simply describe what a page looks like so that by examining that description the end user’s browser is able to display it in the best possible way. With HTML we can tell the browser that this is a headline, here begins a paragraph, these are elements of a list, etc. later the browser will decide how to show those elements.</p>
+    </section>
+    <section class="main-section" id="The_Bases_of_HTML">
+      <header>The Bases of HTML</header>
+      <p>Once we have reviewed some basic notions of HTML and Web page programming in general we will enter fully into the programming with this language. Soon we will realize the simplicity of this language which makes it a very easy language to learn and which will allow us to create pages even more easily.</p>
+      <p>The commands of this language will be formed by commands called tags that may have either the following structure:</p>
+      <code>&lt;LABEL_NAME&gt;</code>
+      <p>Or this one:</p>
+      <code>&lt;LABEL_NAME&gt; TEXT &lt;/LABEL_NAME&gt;</code>
+      <p>As we see, the first structure is formed by a single instruction and the second by two: one that marks the beginning of the label and another that marks the end, with text between both.</p>
+    </section>
+    <section class="main-section" id="First_Steps_with_HTML">
+      <header>First Steps with HTML</header>
+      <p>"The code of the page consists of two large blocks, the header and the body."</p>
+      <p>"The header of the page is delimited by the start and end instructions of the head tag. These instructions must be inside the HTML tag as follows:"</p>
+      <code>
+        &lt;html&gt; <br>
+        &lt;head&gt; <br>
+        Head elements <br>
+        &lt;/head&gt; <br>
+        ... Rest of the page code ... <br>
+        &lt;/html&gt; <br>
+      </code>
+      <p>In the header of the page you enter all that information that will affect the entire page. Initially this information will be limited to the <i>title</i>. This title will be indicated with the <i>title</i> tag using the following syntax:</p>
+      <code>
+        &lt;html&gt; <br>
+        &lt;head&gt; <br>
+        &lt;title&gt;Mi first Website&lt;/title&gt; <br>
+        &lt;/head&gt; <br>
+        &lt;html&gt; <br>
+      </code>
+    </section>
+    <section class="main-section"  id="The_Tag_a">
+      <header>The Tag a</header>
+      <p>This label, of simple name, is the one that will allow to include hypertext links in the pages. Its attribute 'href' allows to indicate which page the user should jump to when clicking on the appropriate text. The text of the link will be the one entered between the start instruction and the end instruction of the label and must be highlighted by the browser so that the user knows that you can click on it. The structure of a link is:</p>
+      <code>
+        &lt;a href="url"&gt; <br>
+        Text that will be sensitive (hypertext) <br>
+        &lt;/a&gt;
+      </code>
+      <p>Graphic browsers such as Netscape Navigator and Microsoft Internet Explorer TM highlight this text by showing it in a different color and underlining it, and the cursor will change when placing it on the text.</p>
+    </section>
+    <section class="main-section" id="Headings">
+      <header >Headings</header>
+      <p>Usually a document has, in addition to plain text, a series of headers or headlines. For this, the HTML language has a series of tags that allow holders of up to 6 levels of importance.</p>
+      <p>These labels are: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; . The letter "h" at the beginning of the name of these labels comes from the abbreviation of the English word heading meaning header. Following the axe is a number from one to six that indicates the importance of the holder being the most important one and the least important six:</p>
+      <code>
+        <uL>
+          <li>&lt;h1&gt;Heading 1&lt;/h1&gt;</li>
+          <li>&lt;h2&gt;Heading 2&lt;/h2&gt;</li> 
+          <li>&lt;h3&gt;Heading 3&lt;/h3&gt;</li> 
+          <li>&lt;h4&gt;Heading 4&lt;/h4&gt;</li> 
+          <li>&lt;h5&gt;Heading 5&lt;/h5&gt;</li> 
+          <li>&lt;h6&gt;Heading 6&lt;/h6&gt;</li> 
+        </uL>
+      </code>
+    </section>
+  </main>
+</body>
+</html>
